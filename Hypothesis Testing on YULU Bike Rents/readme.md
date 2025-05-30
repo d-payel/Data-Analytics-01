@@ -24,8 +24,8 @@
   -Casual user rides increased by 51.66% during the same period.
   -The faster growth in registered users suggests increasing brand loyalty or adoption of subscription-based access over time.
 
-- **Daily Usage Behavior :**<br/>
-  ![Plotting ride counts across the 24-hour clock revealed a bimodal distribution:](Hypothesis Testing on YULU Bike Rents/Plots/hour_count.png)
+- ![**Daily Usage Behavior :**](hour_count.png)<br/>
+  ![Plotting ride counts across the 24-hour clock revealed a bimodal distribution:](hour_count.png)
 
   - Morning peak at 8 AM
 
