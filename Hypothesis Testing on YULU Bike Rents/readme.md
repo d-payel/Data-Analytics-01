@@ -1,4 +1,4 @@
-#  [Hypotheis Testing and Exploratory Data Analysis on YULU Bike Share Demand](https://github.com/d-payel/Data-Analytics-01/blob/main/YULU_Hypothesis_Testing_and_EDA_.ipynb)
+#  Hypotheis Testing and Exploratory Data Analysis on YULU Bike Share Demand
 - **Objective**: Investigate factors affecting number of rides in the Yulu bike-sharing dataset and perform hypothesis testing to identify statistically significant variables.
 - **Skills Used**:
   - Exploratory Data Analysis
@@ -25,7 +25,7 @@
   -The faster growth in registered users suggests increasing brand loyalty or adoption of subscription-based access over time.
 
 - **Daily Usage Behavior :**<br/>
-  Plotting ride counts across the 24-hour clock revealed a bimodal distribution:
+  ![Plotting ride counts across the 24-hour clock revealed a bimodal distribution:](Hypothesis Testing on YULU Bike Rents/Plots/hour_count.png)
 
   - Morning peak at 8 AM
 
