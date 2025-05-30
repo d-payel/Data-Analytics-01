@@ -11,6 +11,7 @@
     - Season codes were relabeled as Spring, Summer, Fall, and Winter.
     - For holiday and working day, I combined the two binary flags to create a new feature: day_type, classifying each day as a Weekday, Weekend, or Holiday based        on its logic.
 - **Rental Trends Across Months (2011–2012) :**<br/>
+  ![.](year_month.png)
   By aggregating the data month-wise, I observed a clear seasonal pattern:
   - Ride counts consistently dip in January and peak mid-year, aligning with seasonal behavior.
   - The drop in January 2011 was more severe than in January 2012, and the peak in June 2012 was notably higher than June 2011.
@@ -25,8 +26,8 @@
   -The faster growth in registered users suggests increasing brand loyalty or adoption of subscription-based access over time.
 
 - ![**Daily Usage Behavior :**](hour_count.png)<br/>
-  ![Plotting ride counts across the 24-hour clock revealed a bimodal distribution:](hour_count.png)
-
+  ![..](hour_count.png)
+  Plotting ride counts across the 24-hour clock revealed a bimodal distribution:
   - Morning peak at 8 AM
 
   - Evening peaks at 5–6 PM
