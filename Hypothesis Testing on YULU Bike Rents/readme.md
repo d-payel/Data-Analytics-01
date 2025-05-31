@@ -33,7 +33,43 @@
   - Evening peaks at 5–6 PM
 
   These patterns align with commute hours, highlighting that a major share of users leverage Yulu as a transport alternative for work or school during rush hours.
+- **Outlier Detection & Statistical Analysis:** <br/>
+  **Unusual Weather & Human Behavior** <br/>
+  - Interestingly, 158 registered and 6 casual users rented bikes during heavy rain, ice-pellets, thunderstorms, and mist — exclusively on weekdays.
+  This suggests certain user segments are highly commute-driven, even in extreme weather.
+  **Outlier Detection** <br/>
+  Visual analysis (boxplots and scatter plots) indicated the presence of outliers in columns like windspeed, count, casual, and registered.<br/>
+  Applied Z-score based outlier detection:
+  - Windspeed column has 67 outliers (0.62%)
+  - Count column has 147 outliers (1.35%)
+  - Registered column has 235 outliers (2.16%) 
+  - Casual has 292 outliers (2.68%)
+  These outliers were retained in the dataset for further analysis, as they may represent genuine extreme cases (e.g., weather anomalies).<br/>
+  
+  **Seasonal Impact on Ride Count:** <br/> 
+  - Boxplot comparisons revealed significant variance differences across seasons — especially between Spring/Winter vs Summer/Fall.<br/>
+  
+  ![.](Plots/box_plot_season.png)
+  
+  - To avoid assuming equal variances, used Kruskal-Wallis Test (a non-parametric alternative to ANOVA):
+    - P-value: 2.48e-151
+    - Strong evidence that ride count varies significantly across seasons
 
+  **Comparing Summer vs Fall:** <br/>
+  
+    To check if ride behavior differs between Summer and Fall, tested variance first:
+    - Levene’s Test P-value: 0.2505 --> Variance is similar
+    - Proceeded with T-Test for mean difference:
+      - T-Test P-value: 0.00027 --> Strong evidence that mean ride counts differ significantly between Summer and Fall
+        
+  **Correlation Pattern:** <br/>
+  
+    ![.](Plots/scatter_reg.png)<br/>
+    
+    From scatter plot:<br/>
+    - Observed a linear correlation between registered users and count, especially on weekdays.
+    - This validates that registered users are primary contributors to weekday usage spikes.
+  
 - **Key Insights**:
   - Duration of ride is dependent on time of day
   - Significant differences exist across user types and locations
