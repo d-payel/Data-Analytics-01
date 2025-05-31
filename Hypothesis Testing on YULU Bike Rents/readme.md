@@ -64,7 +64,7 @@
         
   **Correlation Pattern:** <br/>
   
-    ![.](Plots/scatter_reg.png)<br/>
+    $~~~~~~~~~~~~~~~~$ ![.](Plots/scatter_reg.png)<br/>
     
     From scatter plot:<br/>
     - Observed a linear correlation between registered users and count, especially on weekdays.
