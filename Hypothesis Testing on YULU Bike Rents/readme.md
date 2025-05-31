@@ -27,6 +27,14 @@
   -Registered user rides increased by 70.43% from 2011 to 2012.
   -Casual user rides increased by 51.66% during the same period.
   -The faster growth in registered users suggests increasing brand loyalty or adoption of subscription-based access over time.
+  
+ - **Correlation Pattern:** <br/>
+  
+    $~~~~~~~~~~~~~~~~$ ![.](Plots/scatter_reg.png)<br/>
+    
+    From scatter plot:<br/>
+    - Observed a linear correlation between registered users and count, especially on weekdays.
+    - This validates that registered users are primary contributors to weekday usage spikes.
 
 - **Daily Usage Behavior :**<br/>
 
@@ -70,15 +78,18 @@
     - Levene’s Test P-value: 0.2505 --> Variance is similar
     - Proceeded with T-Test for mean difference:
       - T-Test P-value: 0.00027 --> Strong evidence that mean ride counts differ significantly between Summer and Fall
-        
-  **Correlation Pattern:** <br/>
   
-    $~~~~~~~~~~~~~~~~$ ![.](Plots/scatter_reg.png)<br/>
-    
-    From scatter plot:<br/>
-    - Observed a linear correlation between registered users and count, especially on weekdays.
-    - This validates that registered users are primary contributors to weekday usage spikes.
-  
+  **Impact of Day Type on Ride Demand:**
+    - **Variance Check Across Day Types:**
+    - Boxplots for Weekdays, Weekends, and Holidays showed visually similar spread in ride counts.
+    - Confirmed using Levene’s Test:
+      -  P-value: 0.997 --> Variances are statistically the same (homogeneity in variance holds) so moved forward with ANOVA test.
+      - Proceeded with One-Way ANOVA to compare mean ride counts across day types.
+        - ANOVA P-value: High(0.4641949837127587)
+        - Failed to reject the null hypothesis.<br/>
+    **Conclusion:** No statistically significant difference in ride demand across Weekdays, Weekends, and Holidays.
+
+
 - **Key Insights**:
   - Duration of ride is dependent on time of day
   - Significant differences exist across user types and locations
