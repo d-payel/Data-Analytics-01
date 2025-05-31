@@ -1,9 +1,10 @@
-# Exploratory Data Analysis
-Welcome to my data analysis repository! This space showcases two hands-on case studies focused on hypothesis testing, exploratory data analysis (EDA), and deriving business insights using Python and visual storytelling.
+# Hypothesis Testing and Exploratory Data Analysis
+Welcome to my data analysis repository! This space showcases three hands-on case studies focused on hypothesis testing, exploratory data analysis (EDA), and deriving business insights using Python and visual storytelling.
 
 # Projects Included
-# 1. Aerofit Data 
-# 2. Netflix Case Study
+# [1. YULU Bike Rentals Demand Analysis using Hypothesis Testing](https://github.com/d-payel/Data-Analytics-01/tree/main/Hypothesis%20Testing%20on%20YULU%20Bike%20Rents)
+# 2. Aerofit Data 
+# 3. Netflix Case Study
 - **Objective**: Analyze Netflix's content library to understand trends in show types, launch patterns, country-wise content distribution, and the correlation between release years and content ratings.
 - **Skills Used**:
   - Data cleaning & transformation (pandas)
@@ -14,7 +15,7 @@ Welcome to my data analysis repository! This space showcases two hands-on case s
   - TV Shows are launched mostly in specific months
   - Content rating trends vary mildly with time
   - US dominates the Netflix library distribution
-# [3. YULU Bike Rentals Demand Analysis using Hypothesis Testing](https://github.com/d-payel/Data-Analytics-01/tree/main/Hypothesis%20Testing%20on%20YULU%20Bike%20Rents)
+
 
 
 
