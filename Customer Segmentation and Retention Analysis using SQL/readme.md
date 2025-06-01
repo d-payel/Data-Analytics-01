@@ -53,14 +53,14 @@ Performed null-value checks on both datasets to assess completeness:
 - Aggregated missing `payment_id`s across different `order_status`
 - Calculated the percentage of missing payments by status  
   **Example:** `"Pending" orders had ~27% missing payments`
-- [View Distribution of Missing Payments](Diagram/percentage_of_missing_payments.png)  
+- [View Distribution of Missing Payments](Diagram/percentage_of_missing_payments(1).png)  
 
 ### 6. Order-Payment Summary Per Customer
 
 - Summarized each customer’s transaction footprint:
   - Total orders, total payment amount, success/failure/pending counts
   - Computed **payment success rate** and **failure rate** per customer
-  - [View Distribution of Payment Success Rate at Individual Customer Level](Diagram/payment_success-rate_by-customer.png)
+  - [View Distribution of Payment Success Rate at Individual Customer Level](Diagram/payment_success-rate_by-customer(1).png)
 
 ### 7. Customer Retention Analysis (Cohort)
 
@@ -106,7 +106,7 @@ The customer retention analysis was fully executed and visualized in Tableau usi
 
 ### **Customer Cohort Retention Heatmap**
 
-![Customer Retention Heatmap](Diagram/retention_rate_visualization_task5.png)
+![Customer Retention Heatmap](Diagram/retention_rate_visualization_task5(1).png)
 
 - X-axis: `Elapsed Time` (in months since first order)
 - Y-axis: `Cohort Quarter` (customer's first purchase quarter)
