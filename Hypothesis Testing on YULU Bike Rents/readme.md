@@ -87,7 +87,30 @@
       - Proceeded with One-Way ANOVA to compare mean ride counts across day types.
         - ANOVA P-value: High(0.4641949837127587)
         - Failed to reject the null hypothesis.<br/>
-    **Conclusion:** No statistically significant difference in ride demand across Weekdays, Weekends, and Holidays.
+  **Conclusion:** No statistically significant difference in ride demand across Weekdays, Weekends, and Holidays.
+  **Weather Impact on Ride Counts:**
+    - **Distribution & Variance Check:**
+ 
+      ![.](Plots/box_plot_weather.png)
+      
+      - The fourth category of weather showed very low variance in ride counts, indicating concentrated user behavior.
+      - For deeper statistical validation between Weather Type 1 and 2, conducted Levene’s Test:
+        - P-value: 3.49e-10
+        - No homogeneity of variance — cannot proceed with ANOVA.
+      - Kruskal-Wallis Test Across Weather Types (As variances differed, used Kruskal-Wallis Test (non-parametric ANOVA alternative)):
+        - P-value: 3.50e-44
+
+    - **Conclusion:** Mean ride counts vary significantly across different weather types.
+      
+  **Season and Weather Dependency Check:**
+  
+    - **Chi-Square Test of Independence:**
+      - Hypothesis: 
+        - H₀: Weather and Season are independent,
+        - H₁: Weather depends on Season
+      - P-value: 1.55e-07
+  
+    - **Conclusion:** Weather and Season are statistically dependent — a crucial insight when forecasting ride demand based on seasonal weather patterns.
 
 
 - **Key Insights**:
