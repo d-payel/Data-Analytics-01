@@ -111,6 +111,37 @@
       - P-value: 1.55e-07
   
     - **Conclusion:** Weather and Season are statistically dependent — a crucial insight when forecasting ride demand based on seasonal weather patterns.
+      
+  **Additional Insight: Correlation Between Season and Demand:**
+  
+    - A Spearman correlation analysis between weather_season and rental_count returned a coefficient of -0.479, suggesting a moderate negative relationship.
+    - This implies that certain season-weather combinations are consistently linked to lower bike rental demand.
+    - While not indicative of a strong linear relationship, the correlation is still statistically meaningful and highlights weather_season as a potentially valuable feature in future predictive modeling efforts.<br/>
+    
+  ***Note:*** *While this project does not include a predictive model, identifying such relationships is crucial groundwork for future regression or time-series models.*
+
+
+## **Correlation Heatmap**
+
+$~~~~~~~~~~~~~~~~~~~~~~~~$<img src="Plots/correlation_features_heatmap.png" width=70% height=70%>
+      
+**Key Insight from Correlation Analysis:** 
+
+  - Temperature (temp) shows a moderate positive correlation with rentals by casual users (~0.57), suggesting warmer weather boosts bike usage.
+  - Total rental count (count) is strongly influenced by both registered and casual users, with registered having a near-perfect correlation (~0.99).
+  - Humidity negatively correlates with rentals (−0.35), hinting at weather sensitivity.
+  - Other features like windspeed and engineered features have minimal linear impact.<br/>
+  
+   *Further investigation (possibly nonlinear modeling) could improve predictive performance.*
+
+#**User Type Testing and Statistical Analysis:**
+  $~~~~~~~~~~~~~~~~~~~$<img src="Plots/pie_reg_cas.png" width=60% height=60%>
+  User Split: 81.2% of users are registered, and 18.8% are casual.
+  
+  - **Box Plots were plotted for both user types across weekend, weekday, and holiday:**
+  
+  Both original and outlier-removed data show visible variance differences among day types.
+  Variance is especially higher for casual users on weekends, indicating leisure behavior.
 
 
 - **Key Insights**:
