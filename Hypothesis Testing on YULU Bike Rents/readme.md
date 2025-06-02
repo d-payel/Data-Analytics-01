@@ -134,14 +134,18 @@ $~~~~~~~~~~~~~~~~~~~~~~~~$<img src="Plots/correlation_features_heatmap.png" widt
   
    *Further investigation (possibly nonlinear modeling) could improve predictive performance.*
 
-#**User Type Testing and Statistical Analysis:**
-  $~~~~~~~~~~~~~~~~~~~$<img src="Plots/pie_reg_cas.png" width=60% height=60%>
+## **User Type Testing and Statistical Analysis:**
   User Split: 81.2% of users are registered, and 18.8% are casual.
+  <p align="right">
+    <img src="Plots/pie_reg_cas.png" width=40% height=40%/>
+  <p/>
   
   - **Box Plots were plotted for both user types across weekend, weekday, and holiday:**
-  
-  Both original and outlier-removed data show visible variance differences among day types.
-  Variance is especially higher for casual users on weekends, indicating leisure behavior.
+  - 
+    ![](Plots_2/reg_2.png)
+    
+    - Both original and outlier-removed data show visible variance differences among day types.
+    - Variance is especially higher for casual users on weekends, indicating leisure behavior.
 
 
 - **Key Insights**:
