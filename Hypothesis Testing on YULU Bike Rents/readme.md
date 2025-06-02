@@ -135,19 +135,44 @@ $~~~~~~~~~~~~~~~~~~~~~~~~$<img src="Plots/correlation_features_heatmap.png" widt
    *Further investigation (possibly nonlinear modeling) could improve predictive performance.*
 
 ## **User Type Testing and Statistical Analysis:**
-  User Split: 81.2% of users are registered, and 18.8% are casual.
-  <p align="right">
-    <img src="Plots/pie_reg_cas.png" width=40% height=40%/>
-  <p/>
+  [Initial Observation from Pie Chart:](Plots/pie_reg_cas.png)<br/>
   
-  - **Box Plots were plotted for both user types across weekend, weekday, and holiday:**
-  - 
+    - Registered Users: 81.2%
+    - Casual Users: 18.8%
+  → Registered users dominate the overall bike rental activity.
+  
+- **Box Plots were plotted for both user types across weekend, weekday, and holiday:**
+  
     ![](Plots_2/reg_2.png)
     
     - Both original and outlier-removed data show visible variance differences among day types.
     - Variance is especially higher for casual users on weekends, indicating leisure behavior.
+  - **Levene’s Test for Equal Variance**
+    To check if group variances differ significantly:
+    - Registered users across days → p-value ≈ 2.03e-45
+    - Casual users across days → p-value ≈ 2.06e-287
+    Both tests reject the null hypothesis — variances differ significantly.
+
+  - **Investigating Rental Patterns: Registered vs Casual Users**
+
+    The core objective of this analysis was to understand whether registered and casual users follow the same rental pattern across different day types — namely weekdays, weekends, and holidays.
+    
+    ![](Plots/bike_rentals_by_daytype_reg_users.png)
+    
+    **Registered Users: Strong Weekday Preference**
+    - A bar plot initially showed a significantly higher number of rentals on weekdays for registered users compared to weekends or holidays.
+    - To statistically verify this:<br/>
+    ## **T-test Results for Registered Users:**
+      
+      ## Groups Compared $~~~~~~~~~~~~~~~~~~~~~~~~~~$ P-value $~~~~~~~~~~~~~~~~~~~~~~~~~~$ Interpretation
+        weekend_reg vs holiday_reg                    0.1791                               No significant difference
+        weekday_reg vs weekend_reg	                  9.95 × 10⁻³⁵	                       Significant difference
+
+      **Conclusion:** Registered users rent significantly more on weekdays, likely driven by commuting needs. Weekends and holidays show similar, lower usage. This suggests these users are likely office commuters using YULU for daily travel.
 
 
+
+		
 - **Key Insights**:
   - Duration of ride is dependent on time of day
   - Significant differences exist across user types and locations
