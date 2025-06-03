@@ -2,7 +2,7 @@
 - **Objective**: Investigate factors affecting number of rides in the Yulu bike-sharing dataset and perform hypothesis testing to identify statistically significant variables.
 - **Skills Used**:
   - Exploratory Data Analysis
-  - Hypothesis Testing (Z-test, T-test, ANOVA)
+  - Hypothesis Testing (T-test, Levene's Test, ANOVA, Kruskal-Wallis Test, ChiSquare Test)
   - Outlier detection, distribution analysis
 - **Data Processing & Exploratory Analysis :**<br/>
   To make the dataset more interpretable and analysis-ready, I first restructured the raw datetime column by separating it into distinct date and time features.      This enabled both monthly and hourly trend analyses.<br/>
