@@ -174,6 +174,15 @@ $~~~~~~~~~~~~~~~~~~~~~~~~$<img src="Plots/correlation_features_heatmap.png" widt
 
 		
 - **Key Insights**:
-  - Duration of ride is dependent on time of day
-  - Significant differences exist across user types and locations
-  - Actionable suggestions for optimizing user engagement and fleet placement
+  - Registered users dominate (81.2%) and primarily rent bikes on weekdays, likely for commuting.
+  - Casual users show relatively equal activity on weekends and weekdays, but their rental patterns differ significantly across day types.
+  - Temperature shows a moderate positive correlation with casual user activity — warmer days see more casual rentals.
+  - No single factor strongly correlates with total rentals, suggesting that rental behavior is multifactorial.
+  - Levene’s and t-tests confirmed that rental variances and means differ significantly across user types and day types, validating the need for separate strategies for different segments.
+
+- **Recommendations:**
+  - Prioritize Registered Users: Since 81.2% users are registered and mostly ride on weekdays (likely office commuters), YULU should ensure better bike availability during weekday peak hours (8 AM & 5–6 PM) and offer discounted commuter packs.
+  - Weekend Strategy for Casual Users: Casual users ride more on weekends. YULU can experiment with weekend offers or short-term rental bundles to engage them.
+  - Address January Slump: Rental activity drops in January. A seasonal campaign or referral bonus could help boost engagement during this slow period.
+  - Use Weather-Season Tag: Since the weather-season combo moderately affects rentals, YULU could explore basic demand forecasting using this feature to optimize availability.
+
