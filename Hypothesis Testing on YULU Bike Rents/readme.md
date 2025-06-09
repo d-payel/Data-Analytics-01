@@ -166,7 +166,7 @@ $~~~~~~~~~~~~~~~~~~~~~~~~$<img src="Plots/correlation_features_heatmap.png" widt
       
       ## Groups Compared $~~~~~~~~~~~~~~~~~~~~~~~~~~$ P-value $~~~~~~~~~~~~~~~~~~~~~~~~~~$ Interpretation
         weekend_reg vs holiday_reg                    0.1791                               No significant difference
-        weekday_reg vs weekend_reg	                  9.95 × 10⁻³⁵	                       Significant difference
+        weekday_reg vs weekend_reg	              9.95 × 10⁻³⁵	                   Significant difference
 
       **Conclusion:** Registered users rent significantly more on weekdays, likely driven by commuting needs. Weekends and holidays show similar, lower usage. This suggests these users are likely office commuters using YULU for daily travel.
 
